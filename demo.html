@@ -1,0 +1,146 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+ <head>
+
+  <title> New Document </title>
+
+  <meta name="Generator" content="EditPlus">
+
+  <meta name="Author" content="">
+
+  <meta name="Keywords" content="">
+
+  <meta name="Description" content="">
+
+  <meta charset="utf-8">
+
+  <style type="text/css">
+
+    *{
+
+       margin:0px;
+
+       padding:0px;
+
+    }
+
+    body table{
+
+        border:1px solid black;
+
+    }
+
+    th{
+
+        border:1px solid black;
+
+        text-align:center;
+
+        line-height:center;
+
+        width:400px;
+
+        height:30px;
+
+    }
+
+    td{
+
+        border:1px solid black;
+
+        text-align:center;
+
+        line-height:center;
+
+    }
+
+  </style>
+
+ <script type="text/javascript">
+
+  function data(){
+
+    var str="[{'ename':'tom','salary':'3500','age':'25'},{'ename':'jphn','salary':'3800','age':'25'},{'ename':'mary','salary':'3600','age':'25'}]";
+
+    var jsonObject=eval('('+str+')');
+
+
+
+    for(var i=0;i<jsonObject.length;i++){
+
+      var tr=document.createElement('tr');
+
+      var tdename=document.createElement('td')
+
+      var tdsalary=document.createElement('td')
+
+      var tdage=document.createElement('td')
+
+      tdename.innerHTML=jsonObject[i].ename;
+
+      tdsalary.innerHTML=jsonObject[i].salary;
+
+      tdage.innerHTML=jsonObject[i].age;
+
+
+
+      tr.appendChild(tdename);
+
+      tr.appendChild(tdsalary);
+
+      tr.appendChild(tdage);
+
+      var tbody=document.getElementById('tbody');
+
+      tbody.appendChild(tr);
+
+        }
+
+    }
+
+  </script>
+
+
+
+ </head>
+
+
+
+ <body>
+
+  <table>
+
+   <thead>
+
+    <tr>
+
+      <th>ename</th>
+
+      <th>salary</th>
+
+      <th>age</th>
+
+      <th><input type='button' value='导入数据' onclick="data()"></th>
+
+    </tr>
+
+   </thead>
+
+   <tbody id='tbody'>
+
+
+
+   </tbody>
+
+  </table>
+
+
+
+
+
+ </body>
+
+</html>
