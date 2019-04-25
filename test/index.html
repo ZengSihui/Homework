@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static',filename='assets/images/favicon.png')}}">
+    <title>HeyI-an image-processed website</title>
+    <link href="{{url_for('static',filename='assets/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
+    <link href="{{url_for('static',filename='css/colors/blue.css')}}" id="theme" rel="stylesheet">
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <div id="main-wrapper">
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-toggleable-sm navbar-light">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <b>
+                            <img src="{{url_for('static',filename='assets/images/logo-icon.png')}}" alt="homepage" class="dark-logo" />
+                        </b>
+                        <span>
+                          <font><b>Hey</b></font> Image
+                        </span>
+                    </a>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto mt-md-0 ">
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item hidden-sm-down">
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{url_for('static',filename='assets/images/users/1.jpg')}}" alt="user" class="profile-pic m-r-5" />Fly-FatDragon</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="left-sidebar">
+            <div class="scroll-sidebar">
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a href="index.html" class="waves-effect"><i class="fa fa-clock-o m-r-10" aria-hidden="true"></i>Function</a>
+                        </li>
+                        <li>
+                            <a href="idcards.html" class="waves-effect"><i class="fa fa-id-card m-r-10" aria-hidden="true"></i>Cards</a>
+                        </li>
+                        <li>
+                            <a href="bankcard.html" class="waves-effect"><i class="fa fa-credit-card-alt m-r-10" aria-hidden="true"></i>Bank Cards</a>
+                        </li>
+                        <li>
+                            <a href="table.html" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>Table</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <div class="page-wrapper">
+            <div class="container-fluid">
+                <div class="row page-titles">
+                    <div class="col-md-6 col-8 align-self-center">
+                        <h3 class="text-themecolor m-b-0 m-t-0">Function</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Function</li>
+                        </ol>
+                    </div>
+
+                </div>
+                <!--上传图片/下载信息-->
+                <div class="row">
+                  <div class="col-md-6 col-4 align-self-center">
+                      <a href="#" class="btn pull-right hidden-sm-down btn-success">upload images</a>
+                  </div>
+                  <div class="col-md-6 col-4 align-self-center">
+                      <a href="#" class="btn pull hidden-sm-down btn-success">download files</a>
+                  </div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 align-self-center">
+                      <!--文本信息显示-->
+                              <div class="card">
+                                  <div class="card-block">
+                                      This is some text about the result.
+                                  </div>
+                              </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="{{url_for('static',filename='assets/plugins/jquery/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/plugins/bootstrap/js/tether.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.slimscroll.js')}}"></script>
+    <script src="{{url_for('static',filename='js/waves.js')}}"></script>
+    <script src="{{url_for('static',filename='js/sidebarmenu.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/plugins/sticky-kit-master/dist/sticky-kit.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/custom.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/plugins/flot/jquery.flot.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/plugins/flot.tooltip/js/jquery.flot.tooltip.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/flot-data.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/plugins/styleswitcher/jQuery.style.switcher.js')}}"></script>
+</body>
+
+</html>
